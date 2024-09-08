@@ -2,11 +2,13 @@ package guru.springframework.spring6mvc.services;
 
 import guru.springframework.spring6mvc.model.BeerData;
 import guru.springframework.spring6mvc.model.BeerStyle;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Service
 public class BeerServiceImpl implements BeerService {
     @Override
     public BeerData getBeerById(UUID id) {
