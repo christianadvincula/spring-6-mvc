@@ -15,6 +15,7 @@ public class BeerServiceImpl implements BeerService {
         return BeerData.builder()
                 .id(id)
                 .version(1)
+                .beerName("San Miguel Pale Pilsen Beer")
                 .beerStyle(BeerStyle.LAGER)
                 .upc("4801032111025")
                 .price(new BigDecimal("43.0"))
